@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="certificate.css" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap" rel="stylesheet" />
+  <title>Certificate</title>
+</head>
+<body>
+  <form action="/.netlify/functions/server/submit" enctype="multipart/form-data" method="POST">
+    <div class="certificate">
+      <div class="certificateBottom">
+        <h1> Certificate Details</h1>
+        <hr />
+        <div class="form">
+          <div class="details">
+            <h3>Email</h3>
+            <p>(Certicate will be emailed to this ID)</p>
+            <input type="email" name="email"/>
+          </div>
+          <div class="details">
+            <h3>Aadhaar ID</h3>
+            <input type="number" name="aadhaar"/>
+          </div>
+          <div class="details">
+            <h3>Name</h3>
+            <p>(As shown in Aadhar)</p>
+            <input type="text" name="name"/>
+          </div>
+          <div class="details">
+            <h3>Year of Birth</h3>
+            <input type="text" name="dob"/>
+          </div>
+          <div class="details">
+            <h3>Phone number</h3>
+            <input type="tel" name="phone"/>
+          </div>
+          <div class="details">
+            <h3>Personal Photo</h3>
+            <input type="file" accept="image/*" name="photo"/>
+          </div>
+          <div class="details">
+            <h3>ID Card Photo</h3>
+            <input type="file" accept="image/*" name="idPhoto"/>
+          </div>
+        </div>
+        <button>Submit</button>
+      </div>
+    </div>
+  </form>
+</body>
+<script src="script.js"></script>
+
+</html>
